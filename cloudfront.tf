@@ -10,7 +10,7 @@ resource "aws_cloudfront_distribution" "site" {
 
   enabled             = true
   is_ipv6_enabled     = true
-  comment             = "Static site "
+  comment             = "Static site"
   default_root_object = "index.html"
 
   aliases = ["${var.domain_name}"]
